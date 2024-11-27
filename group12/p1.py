@@ -45,7 +45,6 @@ def max_no_user():
 # Enter number 5: 34
 # The maximum value is: 89
 
-print("What is this")
 
 
     
