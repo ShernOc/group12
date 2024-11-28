@@ -22,11 +22,9 @@ def print_No():
         if numbers % 7 != 0: 
             print(numbers)
                   
-# print_No()
-
+print_No()
 
 #4. Function that find the maximum value among 5 numbers entered by the user
-
 # Prompt the user to enter 5 numbers one by one through the terminal.
 def max_no_user():
     #creating an empty list, 
