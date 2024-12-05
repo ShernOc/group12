@@ -20,8 +20,8 @@ print(list_ascending(numbers))
 def print_No():
     for numbers in range(0,31):
         if numbers % 7 != 0: 
-            print(numbers)
-                  
+            print(numbers)        
+                
 print_No()
 
 #4. Function that find the maximum value among 5 numbers entered by the user
