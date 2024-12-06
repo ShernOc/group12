@@ -11,12 +11,7 @@ class Employee:
     def __init__(self, name, id):
         self.name = name 
         self.id = id
-    
-    #show case the id
-    def __repr__(self):
-        return f"{self.name} (ID: {self.id})"
-        
-        
+      
 # Class Department 
 class Department: 
     def __init__(self, department_name):
@@ -49,7 +44,6 @@ class Department:
         else: 
             print(f"{employee.name} is not in {self.department_name}")
 
-
     # methods that shows/print the all-list all employees
     def show_list(self):
         # print(self.employee_list)
@@ -57,7 +51,9 @@ class Department:
         # #     print([employee for employee in self.employee_list ])
         
         #or
-        print(f"Employees in {self.department_name}:{self.employee_list}")
+        print(f"{self.department_name}",[{employee.name, employee.id} for employee in self.employee_list])
+        
+        # print(f"Employees in {self.department_name}:{self.employee_list}")
             
 
 #Department object 
