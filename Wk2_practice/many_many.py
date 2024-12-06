@@ -10,11 +10,7 @@ class Students:
     def __init__(self,name):
         self.name = name 
         self._clubs= []
-        
-    #method to add the club 
-    def students(self):
-        return self._clubs
-    
+   
     def add_club(self,club):
         if club not in self._clubs:
             self._clubs.append(club)
@@ -30,11 +26,7 @@ class Clubs:
     def __init__(self,name):
         self.name = name
         self._members = []
-        
-    #method/setter to add student to a club: 
-    def students(self):
-        return self._members
-    
+         
     def add_students(self,student):
         if student not in self._members: 
             self._members.append(student) 
