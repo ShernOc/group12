@@ -6,38 +6,45 @@
 # Add a method to display the author’s name and their book title.
 
 
-#Calling an Author in relation to their book 
+#Creating a class Author taking in name as arguments
 class Author:
     def __init__(self,name):
         self.name = name 
+
     
+#Class book that takes title and author  as arguments 
+#We are also passing the author, as 
 class Book:
-    def __init__(self, title,author):
+    def __init__(self,title, author):
         self. title = title
-        self.author = author
-        # self.author = author 
-        
-#Calling the Class 
-#Object of the Author
-a2= Author("Collins")
-# a1 = Author("Marion")
-
-
-#Object of the Book 
-b1 = Book("Things Fall Apart",a2)
-# b2 = Book("Inheritance Book")
-
-a2.name # Collins 
-b1.title # Things Falls apart 
-#creating a relationship 
-# print(f"The Author is {a2.name}: {b1.author.name}")
-# print(f"The title is {b1.title}: ")
-
-#calling the name of author and book title
-def display_name():
-    print(f"The author is: {b1.author.name} and the title is: {b1.title}")
+        self.author = author 
     
+    
+ #create an Author object 
+author3 = Author("Collins")
+author2 = Author ("Abdi")
+author5 = Author("Marion")
+
+
+#A book association with an Author. 
+#create Book object that is going to associate or relate to the author
+# here book2 is in relationship with author3 = "collins"
+book2 = Book("One to One Relationship",author3)
+book5 = Book("Things Fall Apart", author2) 
+book10= Book("Inheritance Book", author5)
+
+#Method/function to display/call the author's name and book title. 
+
+def display_name():
+    print(f"The book title is :{book2.title} and the author of the book is: {book2.author.name}")
+  
 display_name()
+
+author3.name # output = Collins 
+book2.title # output = One to One Relationship 
+
+
+
 
 
 
