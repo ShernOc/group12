@@ -42,17 +42,3 @@ display_name()
 
 author3.name # output = Collins 
 book2.title # output = One to One Relationship 
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-        
