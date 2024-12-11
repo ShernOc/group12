@@ -1,9 +1,4 @@
 # 3. Many-to-Many Relationship: Students and Clubs
-# Scenario: Students can join multiple clubs, and each club can have multiple members.
-# Implement Student and Club classes.
-# Define methods to add a student to a club and display all members of a club.
-# Ensure that when a student joins a club, the relationship is reflected in both objects.
-# Challenge: Write a method to list all clubs a student is a member of and all students in a specific club.
 
 #student class      
 class Students:
@@ -18,6 +13,7 @@ class Students:
             
     #Show the list of students 
     def list_club(self):
+        # if not self.club
         for club in self._clubs:
             print(f"{self.name} has joined the {club.name} club" )
     
@@ -34,6 +30,7 @@ class Clubs:
     def list_club_members(self):
         club_members = [students.name for students in self._members]
         return f" {', '.join(club_members)}"
+    
         
         
 # student objects
